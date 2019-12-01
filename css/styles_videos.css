@@ -1,0 +1,31 @@
+.video-container {
+	position: absolute;
+	background-color: #C0C0C0;
+	height: 480px;
+	width: 640px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px grey;
+}
+
+.close-buttton {
+  position: relative;
+  left: 10px;
+  top: 4px;
+  background-image: url("../images/exit-idle.png");
+  background-size: cover;
+  height: 15px;
+  width: 15px;
+}
+.close-buttton:hover {
+  background-image: url("../images/exit-hover.png");
+}
+.close-buttton:active {
+  background-image: url("../images/exit-active.png");
+}
+
+.video-iframe {
+	position: relative;
+	top: 8px;
+	height: 440px;
+	width: 100%;
+}

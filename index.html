@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport"
+      charset="utf-8"
+      content="width=device-width, initial-scale=1"
+      http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <title>AI Assistant</title>
+    <link href="./css/styles_videos.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/styles_site.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="aiWrapper">
+    <audio id="aiAudio">
+      <source id="ai_src" src="">
+    </audio>
+
+    <input type="text" id="text-input">
+    <button type="button" onclick="handleInput()">Submit</button>
+    <br>
+
+    <div id="messages-container">
+      <div id="messages">
+      </div>
+    </div>
+  </div>
+
+  <button onclick="play()">ok</button>
+
+  <div id="parent">
+    <div id="clock">00:00</div>
+    <iframe 
+      id="music-iframe"
+      width="0" 
+      height="0" 
+      src=""
+      frameborder="0"
+      onload="onMusicLoaded()" 
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div id="footer">
+    <div id="mark-number">
+      MK.1.2
+    </div>
+    <div id="play-button" onclick="resumeMusic()"></div>
+    <div id="pause-button" onclick="pauseMusic()"></div>
+  </div>
+
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=AfOFtuGh"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="helpers.js"></script>
+  <script src="clock.js"></script>
+  <script src="music.js"></script>
+  <script src="videos.js"></script>
+  <script src="speech.js"></script>
+  
+</body>
+</html>
+
